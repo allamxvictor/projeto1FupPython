@@ -8,22 +8,22 @@ print('*****************\nArena HearthStone\n*****************\n')
 while True:  # Verifica se o nome do hero/lacaio é válido.
     meu_hero = input("Nome do seu herói:")
 
-    if (meu_hero.isnumeric()):  # Se o nome tiver apenas números ou negativos o laço volta a se repetir, informando erro.
+    if (meu_hero.isnumeric()):
         print('Nome do herói não pode conter apenas números')
 
-    else:  # Se não for apenas números, então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:  # Verifica se os pontos de vida são valores válidos.
     vida_hero = input(f"Pontos de vida de {meu_hero.capitalize()}:")
 
-    if(vida_hero.isnumeric() == False):  # Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
+    if(vida_hero.isnumeric() == False): 
         print('Erro! Digite apenas valores numéricos entre 1 e 30.')
 
-    elif(int(vida_hero) <= 0 or int(vida_hero) > 30):# Caso não esteja no intervalo 1 a 30 mostra erro e reinicia o laço.
+    elif(int(vida_hero) <= 0 or int(vida_hero) > 30):
         print("Erro! Digíte apenas valores numéricos entre 1 e 30")
 
-    else:  # Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+    else:
         break
 
 while True:  # Verifica se o nome do hero/lacaio contém apenas números e informa erro.
@@ -32,7 +32,7 @@ while True:  # Verifica se o nome do hero/lacaio contém apenas números e infor
     if(meu_lacaio1.isnumeric()):  # Se o nome tiver apenas números ou negativos o laço volta a se repetir pedindo para digitar dnv.
         print('Nome do lacaio não pode conter apenas números')
 
-    else:  # Se não for apenas números e nao for valor negativo então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:  # Verifica se os pontos de vida e atk são valores válidos.
@@ -40,23 +40,23 @@ while True:  # Verifica se os pontos de vida e atk são valores válidos.
     atk_lacaio1 = input(f"Pontos de ataque de {meu_lacaio1.capitalize()}:")
 
     if(vida_lacaio1.isnumeric() == False or atk_lacaio1.isnumeric() == False):
-        # Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
         print('Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.')
         print('Tente novamente.\n')
+        
     elif(int(vida_lacaio1) <= 0 or int(vida_lacaio1) > 10 or int(atk_lacaio1) < 0 or int(atk_lacaio1) > 10):
-    # Caso vida não esteja no intervalo 1 a 10 ou atk no intervalo 0 a 10, mostra erro e reinicia o laço.
         print("Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.")
         print('Tente novamente.\n')
-    else:# Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+        
+    else:
         break
 
-while True:# Verifica se o nome do hero/lacaio contém apenas números e informa erro.
+while True:
     meu_lacaio2 = input("Nome do seu segundo lacaio:")
 
-    if(meu_lacaio2.isnumeric()):# Se o nome tiver apenas números ou negativos o laço volta a se repetir pedindo para digitar dnv.
+    if(meu_lacaio2.isnumeric()):
         print('Nome do lacaio não pode conter apenas números')
 
-    else:# Se não for apenas números então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:# Verifica se os pontos de vida e atk são valores válidos.
@@ -64,47 +64,42 @@ while True:# Verifica se os pontos de vida e atk são valores válidos.
     atk_lacaio2 = input(f"Pontos de ataque de {meu_lacaio2.capitalize()}:")
 
     if(vida_lacaio2.isnumeric() == False or atk_lacaio2.isnumeric() == False):
-    # Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
         print('Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.')
         print('Tente novamente.\n')
 
     elif(int(vida_lacaio2) <= 0 or int(vida_lacaio2) > 10 or int(atk_lacaio2) < 0 or int(atk_lacaio2) > 10):
-    # Caso vida não esteja no intervalo 1 a 10 ou atk no intervalo 0 a 10, mostra erro e reinicia o laço.
         print("Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.")
         print('Tente novamente.\n')
 
-    else:# Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+    else:
         break
 
 while True:# Verifica se o nome do hero/lacaio contém apenas números e informa erro.
     hero_inimigo = input("Nome do herói inimigo:")
 
-    if(hero_inimigo.isnumeric()):#  Se o nome tiver apenas números ou negativos o laço volta a se repetir pedindo para digitar dnv.
+    if(hero_inimigo.isnumeric()):
         print('Nome do herói não pode conter apenas números\n')
 
-    else:# Se não for apenas números então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:# Verifica se os pontos de vida são valores válidos.
     vida_hero_inimigo = input(f"Pontos de vida de {hero_inimigo.capitalize()}:")
 
-    if(vida_hero_inimigo.isnumeric() == False):# Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
+    if(vida_hero_inimigo.isnumeric() == False):
         print('Erro! Digite apenas valores numéricos entre 1 e 30.')
 
-    elif(int(vida_hero_inimigo) <= 0 or int(vida_hero_inimigo) > 30):# Caso não esteja no intervalo 1 a 30 mostra erro e reinicia o laço.
+    elif(int(vida_hero_inimigo) <= 0 or int(vida_hero_inimigo) > 30):
         print("Erro! Digíte apenas valores numéricos entre 1 e 30")
-
-    else:# Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+    else:
         break
 
 while True:# Verifica se o nome do hero/lacaio contém apenas números e informa erro.
     lacaio_inimigo1 = input("Nome do lacaio inimigo:")
 
     if(lacaio_inimigo1.isnumeric()):
-    # Se o nome tiver apenas números o laço volta a se repetir pedindo para digitar dnv.
         print('Nome do lacaio não pode conter apenas números')
-
-    else:# Se não for apenas números ou num negativos então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:# Verifica se os pontos de vida e atk são valores válidos.
@@ -112,26 +107,22 @@ while True:# Verifica se os pontos de vida e atk são valores válidos.
     atk_lacaio_inimigo1 = input(f"Pontos de ataque de {lacaio_inimigo1.capitalize()}:")
 
     if(vida_lacaio_inimigo1.isnumeric() == False or atk_lacaio_inimigo1.isnumeric() == False):
-    # Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
         print('Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.')
         print('Tente novamente.\n')
 
     elif(int(vida_lacaio_inimigo1) <= 0 or int(vida_lacaio_inimigo1) > 10 or int(atk_lacaio_inimigo1) < 0 or int(atk_lacaio_inimigo1) > 10):
-    # Caso vida não esteja no intervalo 1 a 10 ou atk no intervalo 0 a 10, mostra erro e reinicia o laço.
         print("Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.")
         print('Tente novamente.\n')
-
-    else:# Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+    else:
         break
 
 
-while True:  # Verifica se o nome do hero/lacaio contém apenas números e informa erro.
+while True:
     lacaio_inimigo2 = input("Nome do segundo lacaio inimigo:")
 
-    if(lacaio_inimigo2.isnumeric()):  # Se o nome tiver apenas números o laço volta a se repetir pedindo para digitar dnv.
+    if(lacaio_inimigo2.isnumeric()):
         print('Nome do lacaio não pode conter apenas números')
-
-    else:  # Se não for apenas números ou num negativos então é um valor válido e quebramos laço.
+    else:
         break
 
 while True:  # Verifica se os pontos de vida e atk são valores válidos.
@@ -139,16 +130,13 @@ while True:  # Verifica se os pontos de vida e atk são valores válidos.
     atk_lacaio_inimigo2 = input(f"Pontos de ataque de {lacaio_inimigo2.capitalize()}:")
 
     if(vida_lacaio_inimigo2.isnumeric() == False or atk_lacaio_inimigo2.isnumeric() == False):
-        # Caso o valor entrado não seja numérico, mostra msg de erro e reinicia o laço.
         print('Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.')
         print('Tente novamente.\n')
 
     elif(int(vida_lacaio_inimigo2) <= 0 or int(vida_lacaio_inimigo2) > 10 or int(atk_lacaio_inimigo2) < 0 or int(atk_lacaio_inimigo2) > 10):
-        # Caso vida não esteja no intervalo 1 a 10 ou atk no intervalo 0 a 10, mostra erro e reinicia o laço.
         print("Erro! Digíte apenas valores numéricos entre 1 e 10 para vida, e 0 e 10 para ataque.")
         print('Tente novamente.\n')
-
-    else:  # Caso não seja os casos acima, então é um valor valido e o laço é quebrado.
+    else:
         break
 
 print('\n*******************\nComeçando a batalha\n*******************\n')
@@ -157,7 +145,7 @@ print(f'Ataque de {meu_hero.capitalize()}')
 
 while True:
     lacaio_escolhido = str(input('Escolha um de seus lacaios:'))
-    x = False  # Verifica se o lacaio esco
+    x = False  # Verifica se o lacaio escolhido é válido
 
     if(lacaio_escolhido == meu_lacaio1 or lacaio_escolhido == meu_lacaio2):
         x = True
@@ -171,13 +159,12 @@ while True:  #  Verifica se o alvo é válido
     x = False
 
     if(alvo == lacaio_inimigo1 or alvo == lacaio_inimigo2 or alvo == hero_inimigo):
-    #  Caso o alvo seja um dos inimigos então é alvo valido e x = true
         x = True
-
-    elif(x != True):#  Caso x ainda seja falso então o alvo escolhido é um aliado então o programa mostra erro e repete o laço.
+        
+    elif(x != True):
         print(f'Erro: {alvo.capitalize()} é um lacaio/hero aliado. Escolha um alvo inimigo')
 
-    if not (x != True):#  Caso x não seja diferente de true então o alvo escolhido era valido então quebramos o laço.
+    if not (x != True):
         break
 
 print('****Ataque feito!****')
